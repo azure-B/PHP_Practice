@@ -12,20 +12,27 @@
     $a = 1;
     
     echo $a+1;
-    echo "<br/>";
+    echo ' <br/> ';
 
     $a = 2;
     
-    print($a. "<br/>");
+    print($a. ' <br/> ');
 
     $first = "Hello";
 
     echo $first. "world";
+    echo ' <br/> ';
 
-    define('TITLE', 'PHP Tutorial');
-    echo $TITLE;
+    define('Name', 'PHP Tutorial');
+    echo Name;
 
+    ?>
 
+    <?php
+
+    echo ' 1==2 : ';
+    var_dump( 1==2 );
+    echo ' <br/> '
 
     ?>
     
