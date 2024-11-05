@@ -34,6 +34,16 @@
     var_dump( 1==2 );
     echo ' <br/> '
 
+    echo ' 1!==2 : ';
+    var_dump( 1!==2 );
+    echo ' <br/> '
+
+    echo ' 1>2 : ';
+    var_dump( 1>2 );
+    echo ' <br/> '
+
+    
+
     ?>
     
 </body>
