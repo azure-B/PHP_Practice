@@ -45,6 +45,10 @@
     echo $_GET['id'].','.$_GET['password'];
     echo $_POST['id'].','.$_POST['password'];
 
+    include 'Hello.php';
+    Welcome();
+
+
     ?>
     
     <form method="get">
@@ -58,5 +62,7 @@
         password :  <input type="text" name="password" />
         <input type="submit" />
     </form>
+
+    
 </body>
 </html>
