@@ -26,10 +26,6 @@
     define('Name', 'PHP Tutorial');
     echo Name;
 
-    ?>
-
-    <?php
-
     echo ' 1==2 : ';
     var_dump( 1==2 );
     echo ' <br/> ';
@@ -45,11 +41,14 @@
     echo $_GET['id'].','.$_GET['password'];
     echo $_POST['id'].','.$_POST['password'];
 
-    include 'Hello.php';
-    Welcome();
+    require_once 'Hello.php';
+    require_once 'Hello2.php';
 
+    echo hello\welcome();
+    echo world\welcome();
 
     ?>
+
     
     <form method="get">
         id :  <input type="text" name="id" />
