@@ -23,7 +23,6 @@
     ?>
 
 <body>
-
   <table class="table" style="width:70%;margin:auto;">
     <thead>
       <tr>
@@ -49,6 +48,10 @@
     <?php }?>
     </tbody>
   </table>
+
+  <div class="col-md-4" style="float:right;padding:20px;">
+    <a href="write.php"><button type="button" class="btn btn-primary">등록</button><a>
+  </div>
 
   </body>
 </html>
