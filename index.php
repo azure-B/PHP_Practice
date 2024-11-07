@@ -35,43 +35,31 @@
     while($rs = $result->fetch_object()){
         $rsc[]=$rs;
     }
-
-    echo "<pre>";
-    print_r($rsc);
     ?>
 
+<body>
 
-  <body>
-
-        <table class="table" style="width:70%;margin:auto;">
-        <thead>
-            <tr>
-            <th scope="col">번호</th>
-            <th scope="col">글쓴이</th>
-            <th scope="col">제목</th>
-            <th scope="col">등록일</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-            <th scope="row">3</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>2022.01.17</td>
-            </tr>
-            <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>2022.01.17</td>
-            </tr>
-            <tr>
-            <th scope="row">1</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>2022.01.17</td>
-            </tr>
-        </tbody>
-        </table>
+  <table class="table" style="width:70%;margin:auto;">
+    <thead>
+      <tr>
+      <th scope="col">번호</th>
+      <th scope="col">글쓴이</th>
+      <th scope="col">제목</th>
+      </tr>
+    </thead>
+    <tbody>
+      <?php 
+        $i=1;
+        foreach($rsc as $r){
+      ?>
+    <tr>
+      <th scope="row"><?php echo $i++;?></th>
+      <td><?php echo $r->userID?></td>
+      <td><?php echo $r->Title?></td>
+      </tr>
+    <?php }?>
+    </tbody>
+  </table>
 
   </body>
 </html>
