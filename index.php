@@ -43,8 +43,20 @@
     echo ' <br/> ';
 
     echo $_GET['id'].','.$_GET['password'];
+    echo $_POST['id'].','.$_POST['password'];
 
     ?>
     
+    <form method="get">
+        id :  <input type="text" name="id" />
+        password :  <input type="text" name="password" />
+        <input type="submit" />
+    </form>
+
+    <form method="POST">
+        id :  <input type="text" name="id" />
+        password :  <input type="text" name="password" />
+        <input type="submit" />
+    </form>
 </body>
 </html>
