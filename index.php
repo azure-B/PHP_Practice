@@ -32,17 +32,17 @@
 
     echo ' 1==2 : ';
     var_dump( 1==2 );
-    echo ' <br/> '
+    echo ' <br/> ';
 
     echo ' 1!==2 : ';
     var_dump( 1!==2 );
-    echo ' <br/> '
+    echo ' <br/> '; 
 
     echo ' 1>2 : ';
     var_dump( 1>2 );
-    echo ' <br/> '
+    echo ' <br/> ';
 
-    
+    echo $_GET['id'].','.$_GET['password'];
 
     ?>
     
