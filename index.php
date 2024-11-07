@@ -55,7 +55,11 @@
     <tr>
       <th scope="row"><?php echo $i++;?></th>
       <td><?php echo $r->userID?></td>
-      <td><?php echo $r->Title?></td>
+      <td>
+        <a href="/view.php?ID=<?php echo $r->ID;?>">
+          <?php echo $r->Title?>
+        </a>
+      </td>
       </tr>
     <?php }?>
     </tbody>
