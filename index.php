@@ -11,6 +11,27 @@
 
     <title>Hello, world!</title>
   </head>
+  <?php
+    $hostname="localhost";
+
+    $dbuserid="HelloSQL";
+
+    $dbpasswd="13467979!Q";
+
+    $dbname="HelloSQL";
+
+    
+
+    $mysqli = new mysqli($hostname, $dbuserid, $dbpasswd, $dbname);
+
+    if ($mysqli->connect_errno) {
+
+        die('Connect Error: '.$mysqli->connect_error);
+
+    }
+    ?>
+
+
   <body>
 
         <table class="table" style="width:70%;margin:auto;">
