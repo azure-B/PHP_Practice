@@ -29,6 +29,15 @@
         die('Connect Error: '.$mysqli->connect_error);
 
     }
+
+    $result = $mysqli->query("select * from CRUD") or die("query error => ".$mysqli->error);
+    
+    while($rs = $result->fetch_object()){
+        $rsc[]=$rs;
+    }
+
+    echo "<pre>";
+    print_r($rsc);
     ?>
 
 
